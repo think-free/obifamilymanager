@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+    obifamilymanager:
+        container_name: obifamilymanager
+        image: 'thinkfree84/obifamilymanager:latest'
+        restart: always
+        build: ./
+        ports:
+            - 8123:8123
